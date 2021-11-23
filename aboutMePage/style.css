@@ -80,6 +80,24 @@ header {
   color: hotpink;
 }
 
+/* MAIN */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: hotpink;
+}
+
+.text {
+  color: white;
+  display: block;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 900px) {
@@ -99,5 +117,10 @@ header {
 
   .burger-menu {
     display: none;
+  }
+
+  .text {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
