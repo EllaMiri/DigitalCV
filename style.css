@@ -6,6 +6,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  background-color: white;
 }
 
 /* HEADER */
@@ -62,6 +63,27 @@ header {
   padding-left: 1rem;
 }
 
+.ella-portrait {
+  width: 100%;
+  height: auto;
+}
+
+.hello {
+  color: black;
+  margin-left: 1rem;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.name {
+  color: hotpink;
+  margin-top: 0;
+}
+
+.intro-text {
+  color: black;
+  margin-left: 1rem;
+}
 /* HERO */
 
 .headline {
@@ -128,4 +150,24 @@ header {
   /* .mobile-nav {
     display: none;
   } */
+
+  .home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ella-portrait {
+    width: 35%;
+    height: auto;
+    margin-top: 2.3rem;
+  }
+
+  .home-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+  }
 }
