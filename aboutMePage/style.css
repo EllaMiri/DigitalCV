@@ -80,6 +80,10 @@ header {
   color: hotpink;
 }
 
+.current-tab {
+  color: hotpink;
+}
+
 /* MAIN */
 .container {
   display: flex;

@@ -65,6 +65,10 @@ header {
   padding-left: 1rem;
 }
 
+.current-tab {
+  color: hotpink;
+}
+
 .ella-portrait {
   width: 100%;
   height: auto;
