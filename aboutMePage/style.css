@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* background-color: rgb(44, 0, 70); */
+  background-color: black;
+}
+
+/* HEADER */
+
+header {
+  /* background-color: rgb(44, 0, 70); */
+  height: 5rem;
+  display: flex;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.burger-menu {
+  padding-left: 0.3rem;
+  font-size: 2.5rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.port {
+  color: hotpink;
+}
+
+.fo {
+  color: rgb(255, 255, 255);
+}
+
+.lio {
+  color: hotpink;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.list-items {
+  display: none;
+  color: white;
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+/* HOVER EFFECTS */
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.burger-menu:hover {
+  cursor: pointer;
+}
+
+.list-items:hover {
+  cursor: pointer;
+  color: hotpink;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 900px) {
+  .list-items {
+    display: unset;
+    justify-content: flex-end;
+  }
+
+  header {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .logo {
+    margin-left: 2rem;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
