@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+
+header {
+  background-color: rgb(44, 0, 70);
+  height: 5rem;
+  display: flex;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.burger-menu {
+  padding-left: 0.3rem;
+  font-size: 2.5rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.port {
+  color: hotpink;
+}
+
+.fo {
+  color: rgb(255, 255, 255);
+}
+
+.lio {
+  color: hotpink;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.list-items {
+  display: none;
+  color: white;
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+/* HERO */
+
+.headline {
+  font-size: 2.3rem;
+  padding: 0;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  margin-top: 0.7rem;
+}
+
+.name {
+  font-size: 4rem;
+  padding: 0;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* HOVER EFFECTS */
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.burger-menu:hover {
+  cursor: pointer;
+}
+
+.list-items:hover {
+  cursor: pointer;
+  color: hotpink;
+}
+
+/* .list-items-mobile {
+  color: white;
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.mobile-nav {
+  overflow-y: hidden;
+} */
+
+/* MEDIA QUERIES */
+
+@media (min-width: 900px) {
+  .list-items {
+    display: unset;
+    justify-content: flex-end;
+  }
+
+  header {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .logo {
+    margin-left: 2rem;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+  /* .mobile-nav {
+    display: none;
+  } */
+}
