@@ -20,6 +20,37 @@ header {
   display: flex;
   justify-content: center;
   background-color: black;
+  transition: height 400ms;
+}
+
+.header-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-open .header-left {
+  height: 5rem;
+}
+
+.header-open .header-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-open .list-items {
+  display: flex;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.header-open .nav-links {
+  flex-direction: column;
 }
 
 .logo {
@@ -69,6 +100,8 @@ header {
   color: hotpink;
 }
 
+/* MAIN */
+
 .ella-portrait {
   width: 100%;
   height: auto;
@@ -96,15 +129,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-/* HERO */
-
-/* .headline {
-  font-size: 2.3rem;
-  padding: 0;
-  margin-left: 1rem;
-  margin-bottom: 0;
-  margin-top: 0.7rem;
-} */
 
 .name {
   font-size: 4rem;
@@ -129,16 +153,6 @@ header {
   color: hotpink;
 }
 
-/* .list-items-mobile {
-  color: white;
-  list-style-type: none;
-  padding-left: 1rem;
-}
-
-.mobile-nav {
-  overflow-y: hidden;
-} */
-
 /* MEDIA QUERIES */
 
 @media (min-width: 900px) {
@@ -159,9 +173,6 @@ header {
   .burger-menu {
     display: none;
   }
-  /* .mobile-nav {
-    display: none;
-  } */
 
   .home-container {
     display: flex;
