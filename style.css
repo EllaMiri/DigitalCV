@@ -164,29 +164,51 @@ header {
 
 /* SKILLS */
 
-.skills-content {
+.skills-container {
   display: flex;
+  flex-direction: column;
+}
+
+.skills-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .type-heading {
   padding-left: 0.5rem;
   border-bottom: 2px solid white;
+  font-size: 1.4rem;
 }
 
-.skills-container {
+.skills-heading {
+  color: hotpink;
+  display: flex;
+  justify-content: center;
+}
+
+/* PROJECTS */
+
+.projects-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.skills-heading {
+.projects-heading {
   color: hotpink;
 }
 
-.type-heading {
-  font-size: 1.4rem;
+.github-logo {
+  width: 25%;
+  height: auto;
 }
+
+.github-link {
+  color: hotpink;
+}
+
 /* HOVER EFFECTS */
 
 .logo:hover {
