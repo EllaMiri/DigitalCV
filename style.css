@@ -209,6 +209,18 @@ header {
   color: hotpink;
 }
 
+/* CONTACT */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-heading {
+  color: hotpink;
+}
+
 /* HOVER EFFECTS */
 
 .logo:hover {
