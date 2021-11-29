@@ -8,6 +8,9 @@ function addEventListeners() {
     const menuButton = document.getElementById('burgermenu')
     menuButton.onclick = toggleMenu;
 
+    const btnScrollToTop = document.getElementById('btn-scroll-to-top')
+    btnScrollToTop.onclick = scrollToTop;
+
     const home = document.getElementById('home')
     home.onclick = scrollIntoHome;
 
@@ -27,6 +30,16 @@ function addEventListeners() {
 function toggleMenu() {
     const header = document.querySelector('header')
     header.classList.toggle('header-open')
+}
+
+function scrollToTop() {
+    // window.scrollTo(0, 0);
+
+    window.scrollTo({
+        top:0,
+        left:0,
+        behavior:"smooth"
+    })
 }
 
 function scrollIntoHome(event) {

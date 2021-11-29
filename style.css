@@ -138,6 +138,25 @@ header {
   color: hotpink;
 }
 
+#btn-scroll-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: hotpink;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+#btn-scroll-to-top:active {
+  background-color: rgb(255, 16, 136);
+}
+
 /* ABOUT ME */
 
 .about-me-container {
