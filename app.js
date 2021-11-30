@@ -12,24 +12,29 @@ function addEventListeners() {
     btnScrollToTop.onclick = scrollToTop;
 
     const home = document.getElementById('home')
-    home.onclick = scrollIntoHome;
+    home.onclick = () => scrollIntoView('home-scroll')
 
     const aboutMe = document.getElementById('about-me')
-    aboutMe.onclick = scrollIntoAboutMe;
+    aboutMe.onclick = () => scrollIntoView('about-me-scroll')
 
     const skills = document.getElementById('skills')
-    skills.onclick = scrollIntoSkills;
+    skills.onclick = () => scrollIntoView('skills-scroll')
 
     const projects = document.getElementById('projects')
-    projects.onclick = scrollIntoProjects;
+    projects.onclick = () => scrollIntoView('projects-scroll')
 
     const contacts = document.getElementById('contact')
-    contacts.onclick = scrollIntoContact;
+    contacts.onclick = () => scrollIntoView('contact-scroll')
 }
 
 function toggleMenu() {
     const header = document.querySelector('header')
     header.classList.toggle('header-open')
+}
+
+function closeMenu() {
+    const header = document.querySelector('header')
+    header.classList.remove('header-open')
 }
 
 function scrollToTop() {
@@ -42,27 +47,8 @@ function scrollToTop() {
     })
 }
 
-function scrollIntoHome(event) {
-    const homeScroll = document.getElementById('home-scroll')
-    homeScroll.scrollIntoView({ behavior: "smooth"});
-}
-
-function scrollIntoAboutMe(event) {
-    const aboutMeScroll =  document.getElementById('about-me-scroll')
-    aboutMeScroll.scrollIntoView({ behavior: "smooth"});
-}
-
-function scrollIntoSkills(event) {
-    const skillsScroll = document.getElementById('skills-scroll')
-    skillsScroll.scrollIntoView({ behavior: "smooth"});
-}
-
-function scrollIntoProjects(event) {
-    const projectsScroll = document.getElementById('projects-scroll')
-    projectsScroll.scrollIntoView({ behavior: "smooth"});
-}
-
-function scrollIntoContact(event) {
-    const contactScroll = document.getElementById('contact-scroll')
-    contactScroll.scrollIntoView({ behavior: "smooth"});
+function scrollIntoView(elementId) {
+    const element = document.getElementById(elementId)
+    element.scrollIntoView({ behavior: "smooth"});
+    closeMenu();
 }
