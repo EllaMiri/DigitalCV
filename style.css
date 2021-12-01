@@ -63,6 +63,7 @@ header {
 .burger-menu {
   padding-left: 0.3rem;
   font-size: 2.5rem;
+  padding-right: 1rem;
 }
 
 .header-left {
@@ -241,6 +242,10 @@ header {
   color: hotpink;
 }
 
+.mail-me-link {
+  color: hotpink;
+}
+
 /* HOVER EFFECTS */
 
 .logo:hover {
@@ -308,5 +313,10 @@ header {
 
   .text {
     font-size: 1.1rem;
+  }
+
+  .github-logo {
+    width: 10%;
+    height: auto;
   }
 }
