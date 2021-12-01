@@ -6,7 +6,6 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  /* background-color: rgb(44, 0, 70); */
   background-color: black;
   color: white;
 }
@@ -14,7 +13,6 @@ body {
 /* HEADER */
 
 header {
-  /* background-color: rgb(44, 0, 70); */
   height: 5rem;
   min-height: 5rem;
   display: flex;
@@ -87,7 +85,6 @@ header {
 .header-right {
   display: flex;
   align-items: center;
-  /* margin-right: 2rem; */
 }
 
 .nav-links {
