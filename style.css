@@ -129,7 +129,7 @@ header {
 }
 
 .name {
-  font-size: 4rem;
+  font-size: 3.3rem;
   padding: 0;
   margin-bottom: 0;
   margin-top: 0;
@@ -227,6 +227,74 @@ header {
   color: hotpink;
 }
 
+.container {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.heading {
+  color: hotpink;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+  background: hotpink;
+}
+
+.card-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-body .link-btn {
+  display: block;
+  color: white;
+  text-align: center;
+  background: hotpink;
+  padding: 10px 5px;
+  border: none;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-text {
+  color: black;
+}
+
+.linkedin-icon {
+  font-size: 5rem;
+}
+
+/* .email-button {
+  width: 25%;
+  padding: 0.4rem;
+  border-radius: 10px;
+  border: none;
+  background-color: hotpink;
+  color: white;
+} */
+
+.mail-img {
+  font-size: 5rem;
+}
+
 /* CONTACT */
 
 .contact-container {
@@ -315,5 +383,15 @@ header {
   .github-logo {
     width: 10%;
     height: auto;
+  }
+
+  .card {
+    width: 25%;
+    margin-right: 2rem;
+  }
+
+  .row {
+    flex-direction: row;
+    justify-content: center;
   }
 }
