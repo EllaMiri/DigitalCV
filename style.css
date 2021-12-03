@@ -98,7 +98,7 @@ header {
 }
 
 .hello {
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   color: white;
   padding: 0;
   margin-bottom: 0;
@@ -157,7 +157,7 @@ header {
 
 .about-me-heading {
   color: hotpink;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .text {
@@ -335,6 +335,7 @@ header {
 
   .hello {
     font-size: 1.5rem;
+    margin-top: 0;
   }
 
   .name {
